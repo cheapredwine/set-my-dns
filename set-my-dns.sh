@@ -1,4 +1,8 @@
 #!/bin/bash
+if [[ $# -eq 0 ]] ; then
+    echo 'USAGE: set-my-dns [on | off]'
+    exit 0
+fi
 
 if [ $1 = "off" ]; then
     #echo "resetting to DHCP"
