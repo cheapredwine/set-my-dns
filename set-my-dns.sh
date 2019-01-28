@@ -1,6 +1,8 @@
 #!/bin/bash
 if [[ $# -eq 0 ]] ; then
     echo 'USAGE: set-my-dns [on | off]'
+    echo 'Current:'
+    scutil --dns | grep nameserver
     exit 0
 fi
 
